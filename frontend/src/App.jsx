@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Features from './pages/Features';
+import About from './pages/About';
 import SplashScreen from './components/SplashScreen';
+import AuthPage from './pages/AuthPage';
 import './styles/App.css';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/features" element={<Features />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/auth" element={<AuthPage />} />
           </Routes>
         </main>
         <footer className="footer">
