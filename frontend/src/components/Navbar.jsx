@@ -21,8 +21,8 @@ const Navbar = () => {
           <a href="/#about" className="nav-link" onClick={() => setIsOpen(false)}>
             About
           </a>
-          <a href="/#pricing" className="nav-link" onClick={() => setIsOpen(false)}>
-            Pricing
+          <a href="/#more" className="nav-link" onClick={() => setIsOpen(false)}>
+            More info
           </a>
           <button className="nav-btn">Get Started</button>
         </div>
