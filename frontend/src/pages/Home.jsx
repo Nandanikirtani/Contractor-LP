@@ -280,6 +280,26 @@ const Home = () => {
               <p className="stat-label">Features</p>
             </motion.div>
           </motion.div>
+          
+          {/* Explore Features Button */}
+          <motion.div 
+            className="features-cta" 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <motion.button 
+              className="btn-explore-features"
+              whileHover={{ scale: 1.08, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              onClick={() => window.location.href = '/features'}
+            >
+              <span className="btn-text">Explore All Features</span>
+              <span className="btn-icon">→</span>
+            </motion.button>
+          </motion.div>
         </div>
       </section>
 
@@ -373,24 +393,6 @@ const Home = () => {
               );
             })}
           </motion.div>
-          <motion.div 
-            className="features-cta" 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <motion.button 
-              className="btn-explore-features"
-              whileHover={{ scale: 1.08, y: -5 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.3 }}
-              onClick={() => window.location.href = '/features'}
-            >
-              <span className="btn-text">Explore All Features</span>
-              <span className="btn-icon">→</span>
-            </motion.button>
-          </motion.div>
         </div>
       </section>
 
@@ -398,7 +400,7 @@ const Home = () => {
       <section className="testimonials-section">
         <div className="container">
           <motion.div className="section-header" {...fadeInUp}>
-            <h2 className="section-title">Happy Customers</h2>
+            <h2 className="section-title">Happy Clients</h2>
             <p className="section-subtitle">
               See what our clients have to say about us
             </p>

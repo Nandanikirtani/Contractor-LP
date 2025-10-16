@@ -45,13 +45,13 @@ const InteractiveBackground = () => {
         canvas.width * 0.8
       );
 
-      gradient.addColorStop(0, 'rgba(138, 116, 249, 0.4)');
-      gradient.addColorStop(0.3, 'rgba(99, 102, 241, 0.3)');
-      gradient.addColorStop(0.6, 'rgba(59, 130, 246, 0.2)');
-      gradient.addColorStop(1, 'rgba(15, 23, 42, 0)');
+      gradient.addColorStop(0, 'rgba(0, 204, 0, 0.3)');
+      gradient.addColorStop(0.4, 'rgba(0, 255, 68, 0.2)');
+      gradient.addColorStop(0.7, 'rgba(255, 102, 0, 0.1)');
+      gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
       // Clear and fill
-      ctx.fillStyle = '#0f172a';
+      ctx.fillStyle = '#ffffff';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
